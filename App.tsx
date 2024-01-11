@@ -113,9 +113,15 @@ const App = () => {
       <SectionList
         sections={users}
         keyExtractor={(item, index) => item + index}
-        renderItem={({ item }) => <Text>{item}</Text>}
+        renderItem={({ item }) => <Text style={{ fontWeight: 'bold' , 
+                                                 color:'yellow',
+                                                 marginRight:20,
+                                                 backgroundColor:'purple',
+                                                borderColor:'white' }}>{item}</Text>}
         renderSectionHeader={({ section: { name } }) => (
-          <Text style={{ fontWeight: 'bold' }}>{name}</Text>
+          <Text style={{ fontWeight: 'bold' , color:'cyan',marginRight:20,
+          backgroundColor:'purple',
+         borderColor:'white' }}>{name}</Text>
         )}
       />
     </View>
